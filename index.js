@@ -29,3 +29,11 @@ fs.unlink('textFile.txt', function (err) {
     if (err) throw err;
     console.log('File deleted!');
   });
+
+  fs.appendFile("textFile1.txt","1. what is you name? \n 2. where are you from \n 3. okk goood ",function(err){
+    if(err){
+        throw err;
+    }else{
+       console.log("[task Compelted]");
+    }
+})
